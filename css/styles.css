@@ -2,6 +2,7 @@
     /* For mobile phones: */
     html {
 	font-size: 10px;
+	font-family: 'Karla', sans-serif;
     }
 
     .container {
@@ -9,28 +10,28 @@
     }
 
     .rubric {
-	font-family: 'Poppins', bold;
+	font-family: 'Karla', bold;
 	font-size: 1.8rem;
 	letter-spacing: .3rem;
 	color:black;
     }
 
     .rubric-medium {
-	font-family: 'Poppins', bold;
+	font-family: 'Karla', bold;
 	font-size: 1.5rem;
 	letter-spacing: .3rem;
 	color:black;
     }
        
     .rubric-large {
-	font-family: 'Poppins', bold;
+	font-family: 'Karla', bold;
 	font-size: 2rem;
 	letter-spacing: .3rem;
 	color:black;
     }
     
     .h0-custom {
-	font-family: 'EB Garamond';
+	font-family: 'Karla', bold;
 	font-size: 4rem;
 	line-height: 3.5rem;
 	letter-spacing: .2rem;
@@ -39,17 +40,22 @@
     }
     
     .h1-custom {
-	font-family: 'EB Garamond';
+	font-family: 'Karla', bold;
 	font-size: 4rem;
 	line-height: 5.5rem;
 	letter-spacing: .2rem;
 	margin-top:1.2rem;
     }
+
+	.nav-dark ul li a {
+		color: #2D2D2D;
+	}
     
-    .p-custom {
-	font-family: 'EB Garamond';
+    .p-custom,
+	ol li {
+	font-family: 'Karla', sans-serif;
 	font-size: 1.6rem;
-	line-height: 2rem;
+	line-height: 2.5rem;
     }
 
     #footer-desktop {
@@ -591,7 +597,7 @@
     }
     
     .button-like {
-	border: solid white;
+	border: 1px solid white;
 	padding: 10px;
     }
 
@@ -599,7 +605,7 @@
     fieldset {
 	padding:10px;
 	border-radius:10px;
-	font-family: 'Poppins', bold;
+	font-family: 'Karla', bold;
 	font-size: 1.4rem;
 	letter-spacing: .3rem;
 	color:white;
