@@ -1,0 +1,96 @@
+body {
+   margin: 0;
+   padding: 0em;
+   background: #FFF;
+   font: 10pt 'Lucida Sans',sans-serif;
+}
+.wrap {
+}
+.clear {
+   clear: both;
+}
+
+#collectiontitle {
+   font: 14pt 'Lucida Sans',sans-serif;
+}
+
+#collectiondescription {
+   font: 12pt 'Lucida Sans',sans-serif;
+   line-height: 12pt;
+}
+
+.box {
+   float: left;
+   position: relative;
+   width: 18%;
+   padding: 0;
+   padding-bottom: 20%;
+   margin-bottom: 0em;
+   text-align: center;
+   overflow: hidden;
+}
+.boxInner {
+   position: absolute;
+   padding: 0;
+   left: 10px;
+   right: 10px;
+   top: 10px;
+   bottom: 60px;
+   background: #EEE;
+   border-top: 10px solid #EEE;
+   border-bottom: 10px solid #EEE;
+}
+.boxInner img {
+   height: 100%;
+}
+.boxInner a {
+   color: #000;
+   text-decoration: none;
+   padding: 0.2em;
+}
+.titleBox {
+   height: 3em;
+   font: 10pt 'Lucida Sans',sans-serif;
+   padding-top: 1em;
+}
+.category {
+   clear: both;
+}
+body.no-touch .boxInner:hover, body.touch .boxInner.touchFocus {
+   margin-bottom: 0;
+}
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 550px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 680px) and (min-width : 551px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 40%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 680px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 20%;
+      padding-bottom: 25%;
+   }
+}

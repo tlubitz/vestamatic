@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="Vestamatic - The global solution provider in dynamic facades">
-    <link rel="shortcut icon" href="images/logo.jpg">
+    <link rel="shortcut icon" href="img/logo.jpg">
 
     <!-- social media meta data -->
     <meta property="og:url" content="https://www.vestamatic.com" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Vestamatic" />
     <meta property="og:description" content="The global solution provider in dynamic facades" />
-    <meta property="og:image" content="images/home-screen.jpg" />
+    <meta property="og:image" content="img/home-screen.jpg" />
     
     <!-- add bootstrap CSS; normalize for JS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -31,7 +31,7 @@
   <nav class="navbar-front" id="navbar-dynamic">
 	<div class="main-logo">
 		<a href="index.html#main">
-		  <img src="images/logo.jpg" alt="Logo Vestamatic">
+		  <img src="img/logo.jpg" alt="Logo Vestamatic">
 		</a>
 	  </div>
 	<button type="button" class="navbar-toggle collapsed" id="navbutton" data-toggle="collapse" data-target="#mobile_collapse_front" aria-expanded="false">
@@ -95,7 +95,7 @@
     </article>
 
 	<article class="html-snippet-list" id="product">
-
+		<?php include 'index_documents.php';?>
 	</article>
 
   </main>
