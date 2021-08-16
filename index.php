@@ -49,7 +49,7 @@
 <body>
   <nav class="navbar-front" id="navbar-dynamic">
 	<div class="main-logo">
-		<a href="index.html#main">
+		<a href="index.php#main">
 		  <img src="img/logo.jpg" alt="Logo Vestamatic">
 		</a>
 	  </div>
@@ -64,13 +64,13 @@
 
       <ul class="nav navbar-nav-front borders-out container">
 		<li>
-		<a class="rubric nav-item" href="index.html#about" onclick="closeNav()">ABOUT US</a>
+		<a class="rubric nav-item" href="index.php#about" onclick="closeNav()">ABOUT US</a>
 		</li>
 		<li>
-		<a class="rubric nav-item" href="index.html#product" onclick="closeNav()">PRODUCT INSTRUCTIONS</a>
+		<a class="rubric nav-item" href="index.php#product" onclick="closeNav()">PRODUCT INSTRUCTIONS</a>
 		</li>
 		<li>
-		<a class="rubric nav-item" href="index.html#contact" onclick="closeNav()">CONTACT</a>
+		<a class="rubric nav-item" href="index.php#contact" onclick="closeNav()">CONTACT</a>
 		</li>
 	  </ul>
 	</div>
