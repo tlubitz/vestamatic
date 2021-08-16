@@ -3,7 +3,8 @@
 <head>
     <title>Vestamatic</title>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Vestamatic - The global solution provider in dynamic facades">
     <link rel="shortcut icon" href="img/logo.jpg">
 
@@ -18,6 +19,24 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
     
+	<!-- Jonahs Data Tables-->
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="manifest" href="/img/site.webmanifest">
+
+	<script type="text/javascript" src="js/vendor/modernizr-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="js/dataTables.bootstrap4.js"></script>
+	<script type="text/javascript" src="js/dataTables.buttons.js"></script>
+	<script type="text/javascript" src="js/buttons.bootstrap4.js"></script>
+	<script type="text/javascript" src="js/dataTables.fixedColumns.js"></script>
+	<script type="text/javascript" src="js/dataTables.fixedHeader.js"></script>
+	<script type="text/javascript" src="js/dataTables.responsive.js"></script>
+
+
     <!-- import google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -171,7 +190,6 @@
     </article>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/scripts_index.js"></script>
 </body>

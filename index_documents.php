@@ -2,9 +2,6 @@
 
 date_default_timezone_set('MESZ');
 
-
-
-
 function listdocs($cat) {
     $fp = fopen($cat,'r') or die("can't open file");
     print "<table id='documents' class='table table-striped table-bordered dataTable no-footer' style='margin-left: auto; margin-right: auto; width: 75%; max-width: 1000px;'' role='grid' aria-describedby='documents_info'>\n";
@@ -365,29 +362,23 @@ strong {
     font-weight: 700
 }
 </style>
-
 </head>
-<script>
-$(document).ready(function() {
-    $('#documents').DataTable( {
-        "paging":   false,
-        "ordering": false,
-        "info":     true,
-        select: {
-        items: 'cells',
-        info: true
-    }
-    } );
-} );
-</script>
-
-
-
-
-
-
 
 <body>
 	<?php listdocs("documents.csv"); ?>
+    <script>
+    $(document).ready(function() {
+    var table = $('#documents').DataTable( {
+            "ordering": false,
+            "info":     true,
+            select: {
+            items: 'cells',
+            info: true
+        }
+    } );
+    table.page.len(10).draw();
+} );
+</script>
 </body>
+
 </html>

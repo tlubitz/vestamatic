@@ -142,7 +142,7 @@
     }
 
     .background-image {
-	background: url("../images/home-screen.jpg");
+	background: url("../img/home-screen.jpg");
 	height: 400px;
 	width:100%;
 	position:absolute;
@@ -703,10 +703,6 @@
 	width: 100%;
 	padding-top: 20px;
     }
-
-	.html-snippet-list {
-		height: 2000px;
-	}
 
     .darken-overlay {
 	height:700px;
