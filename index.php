@@ -23,6 +23,13 @@
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="manifest" href="/img/site.webmanifest">
 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.css"/>
+	<link rel="stylesheet" type="text/css" href="css/buttons.bootstrap4.css"/>
+	<link rel="stylesheet" type="text/css" href="css/fixedColumns.bootstrap4.css"/>
+	<link rel="stylesheet" type="text/css" href="css/fixedHeader.bootstrap4.css"/>
+	<link rel="stylesheet" type="text/css" href="css/responsive.bootstrap4.css"/>
+
 	<script type="text/javascript" src="js/vendor/modernizr-3.6.0.min.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -64,7 +71,7 @@
 
       <ul class="nav navbar-nav-front borders-out container">
 		<li>
-		<a class="rubric nav-item" href="index.php#about" onclick="closeNav()">ABOUT US</a>
+		<a class="rubric nav-item" id="topmost-nav" href="index.php#about" onclick="closeNav()">ABOUT US</a>
 		</li>
 		<li>
 		<a class="rubric nav-item" href="index.php#product" onclick="closeNav()">PRODUCT INSTRUCTIONS</a>
