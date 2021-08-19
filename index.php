@@ -6,7 +6,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Vestamatic - The global solution provider in dynamic facades">
-    <link rel="shortcut icon" href="img/logo.jpg">
+    <link rel="shortcut icon" href="img/logo.svg">
 
     <!-- social media meta data -->
     <meta property="og:url" content="https://www.vestamatic.com" />
@@ -57,7 +57,7 @@
   <nav class="navbar-front" id="navbar-dynamic">
 	<div class="main-logo">
 		<a href="index.php#main">
-		  <img src="img/logo.jpg" alt="Logo Vestamatic">
+		  <img src="img/logo.svg" alt="Logo Vestamatic">
 		</a>
 	  </div>
 	<button type="button" class="navbar-toggle collapsed" id="navbutton" data-toggle="collapse" data-target="#mobile_collapse_front" aria-expanded="false">
@@ -74,7 +74,7 @@
 		<a class="rubric nav-item" id="topmost-nav" href="index.php#about" onclick="closeNav()">ABOUT US</a>
 		</li>
 		<li>
-		<a class="rubric nav-item" href="index.php#product" onclick="closeNav()">PRODUCT INSTRUCTIONS</a>
+		<a class="rubric nav-item" href="index.php#product" onclick="closeNav()">MANUALS</a>
 		</li>
 		<li>
 		<a class="rubric nav-item" href="index.php#contact" onclick="closeNav()">CONTACT</a>
@@ -100,33 +100,35 @@
       </header>
     </div>
 
-    <article class="module-turquoise" id="about">
-      <div class="row">
-	<div class="col-md-6">
-	  <header>
-	    <h1 class="h1-custom mod-1-left">About us</h1>
-	  </header>
-	</div>
-	<div class="col-md-6 mod-1-right">	
-	  <p class="p-custom">
-		We motorize and control sun
-		protection for more than 40
-		years. So we have experience!
-		Are we also the right partner for
-		the future? We think so, but see
-		for yourself!
-	  </p>
-	</div>
-      </div>
-    </article>
+	<div id="about"></div>
+	<article class="module-turquoise about">
 
-	<article class="html-snippet-list" id="product">
+		<div class="row">
+		<div class="col-md-6">
+		<header>
+			<h1 class="h1-custom mod-1-left">About us</h1>
+		</header>
+		</div>
+		<div class="col-md-6 mod-1-right">	
+		<p class="p-custom">
+			We motorize and control sun
+			protection for more than 40
+			years. So we have experience!
+			Are we also the right partner for
+			the future? We think so, but see
+			for yourself!
+		</p>
+		</div>
+		</div>
+		</article>
+		<div id="product"></div>
+		<article class="html-snippet-list product">
 		<?php include 'index_documents.php';?>
 	</article>
 
   </main>
-
-  <footer id="contact">
+  <div id="contact"></div>
+  <footer>
     <article class="module-dark" id="footer-responsive">
       <div class="row">
 	    <div class="col-md-12">
@@ -147,6 +149,9 @@
 		<p class="p-custom">
 		Dohrweg 27<br>
 		D-41066 Mönchengladbach
+		</p>
+		<p class="p-custom">
+			info@vestamatic.com
 		</p>
 		<p class="p-custom">
 			Tel.: +49 2161 / 29 408-0
@@ -176,6 +181,9 @@
 	    Dohrweg 27<br>
 	    D-41066 Mönchengladbach
 	  </p>
+	  <p class="p-custom">
+			info@vestamatic.com
+		</p>
 	  <p class="p-custom">
 	    Tel.: +49 2161 / 29 408-0
 	  </p>

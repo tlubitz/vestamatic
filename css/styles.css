@@ -29,9 +29,18 @@
 		padding-right: 2rem;
 	}	
 
-	#about h1 {
+	.about h1 {
 		color: #2D2D2D;
 		font-weight: 600;
+	}
+
+	#about,
+	#product,
+	#contact {
+		display: block;
+		position: relative;
+		top: -125px;
+		visibility: hidden;
 	}
 
     .rubric-medium {
@@ -107,7 +116,9 @@
 	}
 
 	.main-logo img {
-		margin: 1.1rem 1rem 1rem 2rem;
+		margin: 2.1rem 1rem 1rem 1.5rem;
+		width: 18rem;
+		margin-top: 2rem;
 	}
 
     .icon-bar {
@@ -426,7 +437,7 @@
 		padding: 2rem 8rem;
 	}
 
-	#about {
+	.about {
 		padding-bottom: 6rem;
 	}
 
@@ -469,7 +480,7 @@
 		padding-left: 3rem;
 	}
 
-	#product {
+	.product {
 		padding-top: 5rem;
 		padding-left: 3rem;
 		padding-right: 3rem;
@@ -512,6 +523,10 @@
     .navbar-nav-front > #home {
 	display:none;
     }
+
+	.main-logo img {
+		width: 22rem;
+	}
 
 	nav li #topmost-nav {
 		margin-top: 0;
@@ -635,7 +650,7 @@
 	padding: 5rem 12rem 5rem 5rem;
     }
 
-	#product {
+	.product {
 		padding-top: 10rem;
 		padding-right: 5rem;
 		padding-left: 5rem;

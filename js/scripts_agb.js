@@ -54,6 +54,8 @@ function navVisibility() {
 		for (i = 0; i < navitems.length; i++) {
 		    navitems[i].style.color = "black";
 		}
+		var logo = document.querySelector('.main-logo img');
+		logo.style.backgroundColor = '#2D2D2D';
 
 		var borders = document.getElementsByClassName("borders-out");
 		for (i = 0; i < borders.length; i++) {
@@ -84,6 +86,8 @@ function navVisibility() {
 	    for (i = 0; i < navitems.length; i++) {
 		navitems[i].style.color = "#2D2D2D";
 	    }
+		var logo = document.querySelector('.main-logo img');
+		logo.style.backgroundColor = 'transparent';
 	}
     }
 }
