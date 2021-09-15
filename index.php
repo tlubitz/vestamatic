@@ -1,3 +1,22 @@
+<?php
+session_start();
+if($_GET['la']){
+    $_SESSION['la'] = $_GET['la'];
+    header('Location:'.$_SERVER['PHP_SELF']);
+    exit();
+}
+
+switch($_SESSION['la']){
+	case "eng":
+        require('lang/eng.php');
+    break;
+    case "ger":
+        require('lang/ger.php');
+    break;
+    default:
+        require('lang/eng.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,15 +90,20 @@
 
       <ul class="nav navbar-nav-front borders-out container">
 		<li>
-		<a class="rubric nav-item" id="topmost-nav" href="index.php#about" onclick="closeNav()">ABOUT US</a>
+		<a class="rubric nav-item" id="topmost-nav" href="index.php#about" onclick="closeNav()"><?php echo $lang['nav-about'];?></a>
 		</li>
 		<li>
-		<a class="rubric nav-item" href="index.php#product" onclick="closeNav()">MANUALS</a>
+		<a class="rubric nav-item" href="index.php#product" onclick="closeNav()"><?php echo $lang['nav-manuals'];?></a>
 		</li>
 		<li>
-		<a class="rubric nav-item" href="index.php#contact" onclick="closeNav()">CONTACT</a>
+		<a class="rubric nav-item" href="index.php#contact" onclick="closeNav()"><?php echo $lang['nav-contact'];?></a>
 		</li>
 	  </ul>
+
+	  <div class="lang-btns" id="langSelect">
+		<a href="index.php?la=eng"><img src="img/eng.jpg" alt="<?=$lang['lang-eng'];?>" title="<?=$lang['lang-eng'];?>" /></a>
+	    <a href="index.php?la=ger"><img src="img/ger.jpg" alt="<?=$lang['lang-ger'];?>" title="<?=$lang['lang-ger'];?>" /></a>
+	  </div>
 	</div>
   </nav>
     
@@ -90,13 +114,9 @@
       </div>
       <header class="cover-header">
 	<div class="rubric white">
-	  WE ARE VESTAMATIC
+		<?php echo $lang['head-small'];?>
 	</div>
-	<h1 class="h0-custom white">Vestamatic CRE
-		is the global
-		solution provider
-		in dynamic
-		facades.</h1>
+	<h1 class="h0-custom white"><?php echo $lang['head-large'];?></h1>
       </header>
     </div>
 
@@ -106,18 +126,26 @@
 		<div class="row">
 		<div class="col-md-6">
 		<header>
-			<h1 class="h1-custom mod-1-left">About us</h1>
+			<h1 class="h1-custom mod-1-left"><?php echo $lang['about-head'];?></h1>
 		</header>
 		</div>
 		<div class="col-md-6 mod-1-right">	
 		<p class="p-custom">
-			We motorize and control sun
-			protection for more than 40
-			years. So we have experience!
-			Are we also the right partner for
-			the future? We think so, but see
-			for yourself!
+			<?php echo $lang['about-1'];?>
 		</p>
+		<p class="p-custom">
+			<?php echo $lang['about-2'];?>
+		</p>
+		<p class="p-custom">
+			<?php echo $lang['about-3'];?>
+		</p>
+		<p class="p-custom">
+			<?php echo $lang['about-4'];?>
+		</p>
+		<p class="p-custom">
+			<?php echo $lang['about-5'];?>
+		</p>
+
 		</div>
 		</div>
 		</article>
@@ -133,7 +161,7 @@
       <div class="row">
 	    <div class="col-md-12">
 	  	  <div class="rubric-large center">
-	        <button id="button-contact" class="transp">CONTACT</button>
+	        <button id="button-contact" class="transp"><?php echo $lang['nav-contact'];?></button>
 	      </div>
 	    </div>
       </div>
@@ -142,7 +170,7 @@
     <div id="modal-contact" class="modal">
       <div class="modal-content">
 		<span class="close">&times;</span>
-		<h1 class="h1-custom">CONTACT</h1>
+		<h1 class="h1-custom"><?php echo $lang['nav-contact'];?></h1>
 		<p class="p-custom">
 		Vestamatic CRE GmbH
 		</p>
@@ -151,19 +179,25 @@
 		D-41066 Mönchengladbach
 		</p>
 		<p class="p-custom">
-			info@vestamatic.com
+		info@vestamaticcre.com
 		</p>
 		<p class="p-custom">
 			Tel.: +49 2161 / 29 408-0
 		</p>
 		<div class="rubric-large center">
-		<a href="imprint.html" class="white">IMPRINT</a>
+		<a href="https://vestamaticcre.com" target="_blank" class="white">VESTAMATICCRE.COM</a>
 		</div>
 		<div class="rubric-large center">
-		<a href="dsgvo.html" class="white">DSGVO</a>
+		<a href="https://vcp-network.com" target="_blank" class="white">VCP-NETWORK.COM</a>
 		</div>
 		<div class="rubric-large center">
-		<a href="agb.html" class="white">AGB</a>
+		<a href="imprint.php" class="white"><?php echo $lang['imprint'];?></a>
+		</div>
+		<div class="rubric-large center">
+		<a href="dsgvo.php" class="white">DSGVO</a>
+		</div>
+		<div class="rubric-large center">
+		<a href="agb.php" class="white">AGB</a>
 		</div>
 	
 
@@ -182,23 +216,29 @@
 	    D-41066 Mönchengladbach
 	  </p>
 	  <p class="p-custom">
-			info@vestamatic.com
+	  info@vestamaticcre.com
 		</p>
 	  <p class="p-custom">
 	    Tel.: +49 2161 / 29 408-0
 	  </p>
 	</div>
 	<div class="col-md-4 fd-2">
+	<p>
+	    <div class="rubric-medium center"><a href="https://vestamaticcre.com" target="_blank" class="white button-like">VESTAMATICCRE.COM</a></div>
+	  </p><br>
+	  <p>
+	    <div class="rubric-medium center"><a href="https://vcp-network.com" target="_blank" class="white button-like">VCP-NETWORK.COM</a></div>
+	  </p><br>
 	</div>
 	<div class="col-md-4 fd-3">
-	  <p>
-	    <div class="rubric-medium center"><a href="imprint.html" class="white button-like">IMPRINT</a></div>
+	<p>
+	    <div class="rubric-medium center"><a href="imprint.php" class="white button-like"><?php echo $lang['imprint'];?></a></div>
 	  </p><br>
 	  <p>
-	    <div class="rubric-medium center"><a href="dsgvo.html" class="white button-like">DSGVO</a></div>
+	    <div class="rubric-medium center"><a href="dsgvo.php" class="white button-like">DSGVO</a></div>
 	  </p><br>
 	  <p>
-	    <div class="rubric-medium center"><a href="agb.html" class="white button-like">AGB</a></div>
+	    <div class="rubric-medium center"><a href="agb.php" class="white button-like">AGB</a></div>
 	  </p>
 	</div>
       </div>
