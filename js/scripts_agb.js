@@ -39,61 +39,6 @@ window.onclick = function(event) {
 // END: Contact modal
 
 
-// stickiness of navbar
-window.onscroll = function() { navVisibility()};
-
-function navVisibility() {
-    if (window.innerWidth > 991) {
-	if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-	    var nav = document.getElementById("navbar-dynamic");
-	    if (nav.style.position === 'absolute') {
-		
-		//nav.style.position = 'fixed';
-		nav.classList.add('navbar-back');
-		var navitems = document.getElementsByClassName("nav-item");
-		for (i = 0; i < navitems.length; i++) {
-		    navitems[i].style.color = "black";
-		}
-		var logo = document.querySelector('.main-logo img');
-		logo.style.backgroundColor = '#2D2D2D';
-
-		var borders = document.getElementsByClassName("borders-out");
-		for (i = 0; i < borders.length; i++) {
-		    var borders_li = borders[i].getElementsByTagName("a");
-		    for (j = 0; j < borders_li.length; j++) {
-		    }
-		}
-
-		nav.style.top = "-100px";
-		nav.style.position = "fixed";
-
-		let current_pos = -100;
-		var interv = setInterval(increase, 1);
-		function increase() {
-		    current_pos++;
-		    nav.style.top = current_pos + "px";
-		    if (current_pos === 0) {
-			clearInterval(interv);
-		    }
-		}
-	    }
-	}
-	else {
-	    var nav = document.getElementById("navbar-dynamic");
-	    nav.style.position = 'absolute';
-	    nav.classList.remove('navbar-back');
-	    var navitems = document.getElementsByClassName("nav-item");
-	    for (i = 0; i < navitems.length; i++) {
-		navitems[i].style.color = "#2D2D2D";
-	    }
-		var logo = document.querySelector('.main-logo img');
-		logo.style.backgroundColor = 'transparent';
-	}
-    }
-}
-
-
-
 // Put footer to the bottom of the page
 /*var header_height = 0;
 var footer_height = document.getElementById("footer").offsetHeight;

@@ -534,6 +534,10 @@
 	display:none;
     }
 
+	#navbar-dynamic {
+		position: fixed;
+	}
+
 	.navbar-front {
 		background-color: white;
 	}
@@ -684,7 +688,7 @@
     }
 
     .mod-1-left {
-	padding: 5rem 1rem 5rem 13rem;
+	padding: 35rem 1rem 5rem 13rem;
     }
 
     .mod-1-right {
@@ -880,6 +884,10 @@
 	padding-top: 20px;
     }
 
+	.mod-1-left {
+		padding-left: 10rem;
+	}
+	
     .darken-overlay {
 	height:700px;
     }
