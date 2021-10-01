@@ -17,6 +17,14 @@
 		margin-top: 6rem;
 	}
 
+	.navbar-front {
+		background-color: white;
+	}
+
+	.main-logo img {
+		filter: invert();
+	}
+
     .rubric {
 	font-family: 'Karla', bold;
 	font-size: 1.8rem;
@@ -538,10 +546,6 @@
 		position: fixed;
 	}
 
-	.navbar-front {
-		background-color: white;
-	}
-
 	.navbar-nav-front {
 		padding-bottom: 0;
 	}
@@ -633,10 +637,6 @@
 	display: inline-block;
     }
 
-	.main-logo img {
-		filter: invert();
-	}
-
     .navbar-nav-front > li > a {
 	color: black;
 	padding-left:20px;
@@ -688,7 +688,7 @@
     }
 
     .mod-1-left {
-	padding: 35rem 1rem 5rem 13rem;
+	padding: 45rem 1rem 5rem 13rem;
     }
 
     .mod-1-right {
@@ -984,12 +984,66 @@
     }
 }
 
+
+@media only screen and (min-width: 1300px) {
+	.mod-1-left {
+		padding-top: 35rem;
+	}
+}
+
+
+@media only screen and (min-width: 1400px) {
+	.mod-1-left {
+		padding-top: 33rem;
+	}
+}
+
+
+@media only screen and (min-width: 1500px) {
+	.mod-1-left {
+		padding-top: 31rem;
+	}
+}
+
+
 @media only screen and (min-width: 1600px) {
     /* For large desktops: */
 	.cover-header {
 		padding-right: 25%;
 		}
-	
+}
 
 
+@media only screen and (min-width: 1700px) {
+	.mod-1-left {
+		padding-top: 27rem;
+	}
+}
+
+
+@media only screen and (min-width: 1800px) {
+	.mod-1-left {
+		padding-top: 25rem;
+	}
+}
+
+
+@media only screen and (min-width: 1900px) {
+	.mod-1-left {
+		padding-top: 23rem;
+	}
+}
+
+
+@media only screen and (min-width: 2000px) {
+	.mod-1-left {
+		padding-top: 20rem;
+	}
+}
+
+
+@media only screen and (min-width: 2100px) {
+	.mod-1-left {
+		padding-top: 18rem;
+	}
 }
